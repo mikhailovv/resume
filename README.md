@@ -1,1 +1,1 @@
-This is sources for vmikhailov.github.io 
+This is sources for https://mikhailovv.github.io/resume/
