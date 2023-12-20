@@ -1,229 +1,401 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>About me</title>
-</head>
-<style>
+  </head>
+  <style>
     * {
-        margin: 0;
-        padding: 0
+      margin: 0;
+      padding: 0;
     }
 
     body {
-        width: 100%;
-        height: 100%;
-        font-family: Roboto, sans-serif;
-        font-size: 16px;
-        padding: 50px;
+      width: 100%;
+      height: 100%;
+      font-family: Roboto, sans-serif;
+      font-size: 16px;
+      padding: 50px;
     }
 
     .content {
-        margin: 0 auto;
-        max-width:1000px;
-
-
+      margin: 0 auto;
+      max-width: 1000px;
     }
 
     .experience {
-        display: flex;
-        flex-direction: column;
-        margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      margin-top: 30px;
     }
 
     .experience .workplace {
-        display: flex;
-        flex-direction: row;
-        margin-top:30px;
+      display: flex;
+      flex-direction: row;
+      margin-top: 30px;
     }
 
     .workplace .logo {
-        flex-flow: column;
+      flex-flow: column;
     }
 
     .workplace .logo .logo-img {
-        height: 80px;
-        width: 80px;
+      height: 80px;
+      width: 80px;
     }
 
     .workplace .company {
-        flex-flow: column;
-        flex-grow: 1;
-        padding: 10px 10px 10px 20px;
-        color: #464646;
+      flex-flow: column;
+      flex-grow: 1;
+      padding: 10px 10px 10px 20px;
+      color: #464646;
     }
 
     .workplace .company .header {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
     }
 
     .workplace .company .header .link {
-        line-height: 30px;
+      line-height: 30px;
     }
 
     .description {
-        margin-top: 20px;
-        font-size: 20px;
+      margin-top: 20px;
+      font-size: 20px;
     }
 
     .workplace .company .description .position {
-        font-weight: 800;
+      font-weight: 800;
     }
 
     .interval {
-        color: #aaa;
-        font-size: 16px;
+      color: #aaa;
+      font-size: 16px;
     }
 
     .workplace .company .description .text {
-        margin-top: 10px;
-        text-align: justify;
-        font-size: 20px;
+      margin-top: 10px;
+      text-align: justify;
+      font-size: 20px;
     }
 
     .workplace .company .description .stack {
-        margin-top: 10px;
-        font-size: 16px;
-        font-weight: 800;
+      margin-top: 10px;
+      font-size: 16px;
+      font-weight: 800;
     }
 
-    .page-header {display: flex; flex-direction: column;text-align: center;margin-bottom:30px;}
-    .page-header .photo img {border-radius: 50%;width: 200px;height: 200px;margin:20px;}
-    .contact {margin-top:10px;}
-</style>
+    .page-header {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .page-header .photo img {
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      margin: 20px;
+    }
+    .contact {
+      margin-top: 10px;
+    }
+  </style>
 
-<body>
-<div class="content">
-    <div class="page-header">
+  <body>
+    <div class="content">
+      <div class="page-header">
         <div class="photo">
-            <img alt="Viacheslav Mikhailov" src="asserts/img/photo.jpg" />
+          <img alt="Viacheslav Mikhailov" src="asserts/img/photo.jpg" />
         </div>
         <h1>Viacheslav Mikhailov</h1>
         <p class="description">Backend developer</p>
         <p class="interval">Location: Tallinn, Estonia</p>
-    </div>
-    <div class="about">
+      </div>
+      <div class="about">
         <h1>About me</h1>
-        <p class="description">I am a 33 years old backend developer. My experience is to develop difficult backend applications on PHP, following the rules SOLID, KISS and DRY. Mostly worked with PHP (Symfony, Silex, Zend Framework). I have good knowledge in JS. Learn about VueJS and React, but use it only for my pet-projects. At my last job I wrote microservice in Java and Spring.  I prefer to write tests before code, if possible. But when in my life agile was incoming, technology has gone to second place. In the first place I put communication between business and developers. You can have unbelievable hard skills, but if you can't find common language with business, you didn't make a product. I have good communication skills and know how to build people into teams. I speak English and Russian. </p>
-        <p class="description">My hobbies: traveling, photography, golang and algorithmic tasks.</p>
-    </div>
-    <div class="experience">
+        <p class="description">
+          I am a 35 year old backend developer. My experience includes
+          developing complex backend applications in PHP, adhering to the
+          principles of SOLID, KISS, and DRY. I have primarily worked with PHP
+          frameworks such as Symfony, Laravel, Silex, and Zend Framework. I have
+          good knowledge in JS. Learned VueJS and React, but only used it for my
+          pet-projects. At my last two jobs I wrote microservices in Java on
+          Spring. I prioritize writing tests before code whenever possible.
+          However, with the introduction of agile in my professional journey,
+          technology has taken a back seat. My primary focus is on fostering
+          communication between business and developers. Exceptional technical
+          skills are valuable, but without the ability to connect with the
+          business, creating a successful product becomes challenging. I possess
+          strong communication skills. I speak English and Russian.
+        </p>
+        <p class="description">
+          My hobbies: traveling, photography, karting and algorithmic tasks.
+        </p>
+      </div>
+      <div class="experience">
         <h1>Experience</h1>
         <div class="workplace">
-            <div class="logo"><img alt="Invoicebox" class="logo-img" src="asserts/img/invoicebox.png"/></div>
-            <div class="company">
-                <div class="header">
-                    <div class="name"><h2>Invoicebox</h2>
-                        <p>Online payment service</p>
-                    </div>
-                    <div class="link"><a href="https://invoicebox.ru">invoicebox.ru</a></div>
-                </div>
-                <div class="description">
-                    <p class="position">Backend developer</p>
-                    <p class="interval">August 2019 - November 2021 (2 years and 4 months)</p>
-                    <p class="text">Developed a billing service in a small team. Was engaged in integration with various external systems. One of the integrations required developing micro service in Java, because PHP didn't need cryptography libraries. Here I could use my agile experience and work directly with business representatives. The reason why I am leaving this employer is related to my immigration to Estonia.</p>
-                    <p class="stack">PHP 8.0, Symphony 5, PostgreSQL, RabbitMQ, Redis, Docker, Kubernetes, Helm, Java, Spring, CryptoPro JSP</p>
-                </div>
+          <div class="logo">
+            <img
+              alt="SkySelect"
+              class="logo-img"
+              src="asserts/img/skyselect.png"
+            />
+          </div>
+          <div class="company">
+            <div class="header">
+              <div class="name">
+                <h2>SkySelect</h2>
+                <p>Procurement AI</p>
+              </div>
+              <div class="link">
+                <a href="https://skyselect.com">skyselect.com</a>
+              </div>
             </div>
+            <div class="description">
+              <p class="position">Backend developer</p>
+              <p class="interval">January 2022 - present</p>
+              <p class="text">
+                Developed a procurement service in a team. Here I have done many
+                types of work as a developer, implementing business functions,
+                refactoring existing solutions and working within the
+                application architecture. Also participated in the development
+                of a microservice in Java (Spring).
+              </p>
+              <p class="stack">
+                PHP, Laravel, MySQL, Redis, Docker, Kubernetes, Java, Spring
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="workplace">
+          <div class="logo">
+            <img
+              alt="Invoicebox"
+              class="logo-img"
+              src="asserts/img/invoicebox.png"
+            />
+          </div>
+          <div class="company">
+            <div class="header">
+              <div class="name">
+                <h2>Invoicebox</h2>
+                <p>Online payment service</p>
+              </div>
+              <div class="link">
+                <a href="https://invoicebox.ru">invoicebox.ru</a>
+              </div>
+            </div>
+            <div class="description">
+              <p class="position">Backend developer</p>
+              <p class="interval">
+                August 2019 - November 2021 (2 years and 4 months)
+              </p>
+              <p class="text">
+                Developed a billing service in a small team. Was engaged in
+                integration with various external systems. One of the
+                integrations required developing microservice in Java, because
+                PHP doesn't have needed cryptography libraries. Here I could use my
+                agile experience and work directly with business
+                representatives. The reason why I am leaving this employer is
+                related to my immigration to Estonia.
+              </p>
+              <p class="stack">
+                PHP 8.0, Symphony 5, PostgreSQL, RabbitMQ, Redis, Docker,
+                Kubernetes, Helm, Java, Spring, CryptoPro JSP
+              </p>
+            </div>
+          </div>
         </div>
 
         <div class="workplace">
-            <div class="logo"><img alt="220 Volt" class="logo-img" src="asserts/img/220-volt.png"/></div>
-            <div class="company">
-                <div class="header">
-                    <div class="name">
-                        <h2>220 Volt</h2>
-                        <p>Power Tools Online Hypermarket</p>
-                    </div>
-                    <div class="link"><a href="https://220-volt.ru">220-volt.ru</a></div>
-                </div>
-                <div class="description">
-                    <p class="position">Backend developer</p>
-                    <p class="interval">Jule 2018 - Jule 2019 (1 year and 1 month)</p>
-                    <p class="text">Developed modules for Magento 2. Worked in a cross functional team with front and Java developers. This was my experience working in a big company, with a lot of layers of different managers. At that time the company was trying to change the methodology of management and I got acquainted with Agile, from that moment I began to better understand how development and business should be close.</p>
-                    <p class="stack">PHP 7.1, MySQL, Magento 2, RabbitMQ, Redis, Docker, Kubernetes, Elasticsearch</p>
-                </div>
+          <div class="logo">
+            <img
+              alt="220 Volt"
+              class="logo-img"
+              src="asserts/img/220-volt.png"
+            />
+          </div>
+          <div class="company">
+            <div class="header">
+              <div class="name">
+                <h2>220 Volt</h2>
+                <p>Power Tools Online Hypermarket</p>
+              </div>
+              <div class="link">
+                <a href="https://220-volt.ru">220-volt.ru</a>
+              </div>
             </div>
+            <div class="description">
+              <p class="position">Backend developer</p>
+              <p class="interval">Jule 2018 - Jule 2019 (1 year and 1 month)</p>
+              <p class="text">
+                Developed modules for Magento 2. Worked in a cross functional
+                team with frontend and Java developers. This was my experience
+                working in a big company, with a lot of layers of different
+                managers. At that time the company was trying to change the
+                methodology of management and I got acquainted with Agile, from
+                that moment I began to better understand how development and
+                business should be close.
+              </p>
+              <p class="stack">
+                PHP 7.1, MySQL, Magento 2, RabbitMQ, Redis, Docker, Kubernetes,
+                Elasticsearch
+              </p>
+            </div>
+          </div>
         </div>
 
         <div class="workplace">
-            <div class="logo"><img alt="HORIS Ltd" class="logo-img" src="asserts/img/horis.png"/></div>
-            <div class="company">
-                <div class="header">
-                    <div class="name">
-                        <h2>HORIS Ltd</h2>
-                        <p>Software development company. Gas station automation department</p>
-                    </div>
-                    <div class="link"><a href="http://gasnet.ru">gasnet.ru</a></div>
-                </div>
-                <div class="description">
-                    <p class="position">Full stack developer</p>
-                    <p class="interval">September 2011 - June 2018 (6 years and 10 months)</p>
-                    <p class="text">Work in the gas station automation department. Participated in the development web application for a loyalty system in a gas station network. We only distributed our web application on Amazon Web Servers, automating that process, was my next big task at this place. I'am automated process to create and configure AWS instances. Customers could install, update, configure backups for our applications in AWS. Second part of this work is a web application for sales managers, they could manage license keys and distribution processes for every one of our web applications. This biggest work includes 7 different services for managing distribution applications. Participated in different internal and outsource projects.</p>
-
-                    <p class="stack">PHP 5.6, PHP 7.0, MySQL, Zend Framework, Silex, AWS, SVN, GitHub, PostgreSQL,
-                        PostGIS, JS, TypeScript, NodeJS, Cordova, Zend Encoder</p>
-                </div>
+          <div class="logo">
+            <img alt="HORIS Ltd" class="logo-img" src="asserts/img/horis.png" />
+          </div>
+          <div class="company">
+            <div class="header">
+              <div class="name">
+                <h2>HORIS Ltd</h2>
+                <p>
+                  Software development company. Gas station automation
+                  department
+                </p>
+              </div>
+              <div class="link"><a href="http://gasnet.ru">gasnet.ru</a></div>
             </div>
+            <div class="description">
+              <p class="position">Full stack developer</p>
+              <p class="interval">
+                September 2011 - June 2018 (6 years and 10 months)
+              </p>
+              <p class="text">
+                Work in the gas station automation department. Participated in
+                the development web application for a loyalty system in a gas
+                station network. We only distributed our web application on
+                Amazon Web Servers, automating that process, was my next big
+                task at this place. I'am automated process to create and
+                configure AWS instances. Customers could install, update,
+                configure backups for our applications in AWS. Second part of
+                this work is a web application for sales managers, they could
+                manage license keys and distribution processes for every one of
+                our web applications. This biggest work includes 7 different
+                services for managing distribution applications. Participated in
+                different internal and outsource projects.
+              </p>
+
+              <p class="stack">
+                PHP 5.6, PHP 7.0, MySQL, Zend Framework, Silex, AWS, SVN,
+                GitHub, PostgreSQL, PostGIS, JS, TypeScript, NodeJS, Cordova,
+                Zend Encoder
+              </p>
+            </div>
+          </div>
         </div>
-    </div>
-    <div class="experience">
+      </div>
+      <div class="experience">
         <h1>Education</h1>
         <div class="workplace">
-            <div class="logo"><div class="logo-img"></div></div>
-            <div class="company">
-                <div class="header">
-                    <div class="name"><h2>Dagestan State University</h2><p>Faculty of Mathematics</p></div>
-                    <div class="link"><a href="http://dgu.ru/english.html">dgu.ru</a></div>
-                </div>
-                <div class="description">
-                    <p class="position">Systems programmer, mathematician</p>
-                    <p class="interval">2005 - 2010</p>
-                </div>
+          <div class="logo"><div class="logo-img"></div></div>
+          <div class="company">
+            <div class="header">
+              <div class="name">
+                <h2>Dagestan State University</h2>
+                <p>Faculty of Mathematics</p>
+              </div>
+              <div class="link">
+                <a href="http://dgu.ru/english.html">dgu.ru</a>
+              </div>
             </div>
+            <div class="description">
+              <p class="position">Systems programmer, mathematician</p>
+              <p class="interval">2005 - 2010</p>
+            </div>
+          </div>
         </div>
-    </div>
-    <div class="experience">
+      </div>
+      <div class="experience">
         <h1>Achievements</h1>
         <div class="workplace">
-            <div class="logo"><img alt="ZCPE" class="logo-img" src="asserts/img/ZCPE-logo-XS.jpeg"/></div>
-            <div class="company">
-                <div class="header">
-                    <div class="name"><h2>Zend</h2><p>ZEND024658</p></div>
-                    <div class="link"><a href="https://www.zend-zce.com/en/yellow-pages/ZEND024658">zend-zce.com/en/yellow-pages/ZEND024658</a></div>
-                </div>
-                <div class="description">
-                    <p class="position">Zend Certified Engineer</p>
-                    <p class="interval">04 February 2014</p>
-                </div>
+          <div class="logo">
+            <img
+              alt="ZCPE"
+              class="logo-img"
+              src="asserts/img/ZCPE-logo-XS.jpeg"
+            />
+          </div>
+          <div class="company">
+            <div class="header">
+              <div class="name">
+                <h2>Zend</h2>
+                <p>ZEND024658</p>
+              </div>
+              <div class="link">
+                <a href="https://www.zend-zce.com/en/yellow-pages/ZEND024658"
+                  >zend-zce.com/en/yellow-pages/ZEND024658</a
+                >
+              </div>
             </div>
+            <div class="description">
+              <p class="position">Zend Certified Engineer</p>
+              <p class="interval">04 February 2014</p>
+            </div>
+          </div>
         </div>
         <div class="workplace">
-            <div class="logo"><img alt="HackerRank" class="logo-img" src="asserts/img/HackerRank_Icon-80px.png"/></div>
-            <div class="company">
-                <div class="header">
-                    <div class="name"><h2>HackerRank</h2></div>
-                    <div class="link"><a href="https://www.hackerrank.com/certificates/ef0c5b0edf39">hackerrank.com/certificates/ef0c5b0edf39</a></div>
-                </div>
-                <div class="description">
-                    <p class="position">Problem Solving (Intermediate)</p>
-                    <p class="interval">15 September 2020</p>
-                </div>
+          <div class="logo">
+            <img
+              alt="HackerRank"
+              class="logo-img"
+              src="asserts/img/HackerRank_Icon-80px.png"
+            />
+          </div>
+          <div class="company">
+            <div class="header">
+              <div class="name"><h2>HackerRank</h2></div>
+              <div class="link">
+                <a href="https://www.hackerrank.com/certificates/ef0c5b0edf39"
+                  >hackerrank.com/certificates/ef0c5b0edf39</a
+                >
+              </div>
             </div>
+            <div class="description">
+              <p class="position">Problem Solving (Intermediate)</p>
+              <p class="interval">15 September 2020</p>
+            </div>
+          </div>
         </div>
-    </div>
-    <div class="experience">
+      </div>
+      <div class="experience">
         <h1>Contacts</h1>
         <div class="description">
-            <div class="contact">GitHub: <a href="https://github.com/mikhailovv">mikhailovv</a></div>
-            <div class="contact">LinkedIn: <a href="https://www.linkedin.com/in/vmikhailov2015/">vmikhailov2015</a></div>
-            <div class="contact">Telegram: <a href="https://telegram.me/vmikhailov2015">vmikhailov2015</a></div>
-            <div class="contact">Email: <a href="mailto:vmikhailov2015@gmail.com">vmikhailov2015@gmail.com</a></div>
-            <div class="contact">Instagram: <a href="https://www.instagram.com/vyacheslav.mikhailov/">vyacheslav.mikhailov</a></div>
+          <div class="contact">
+            GitHub: <a href="https://github.com/mikhailovv">mikhailovv</a>
+          </div>
+          <div class="contact">
+            LinkedIn:
+            <a href="https://www.linkedin.com/in/vmikhailov2015/"
+              >vmikhailov2015</a
+            >
+          </div>
+          <div class="contact">
+            Telegram:
+            <a href="https://telegram.me/vmikhailov2015">vmikhailov2015</a>
+          </div>
+          <div class="contact">
+            Email:
+            <a href="mailto:vmikhailov2015@gmail.com"
+              >vmikhailov2015@gmail.com</a
+            >
+          </div>
+          <div class="contact">
+            Instagram:
+            <a href="https://www.instagram.com/vyacheslav.mikhailov/"
+              >vyacheslav.mikhailov</a
+            >
+          </div>
         </div>
+      </div>
     </div>
-</div>
-</body>
+  </body>
 </html>
