@@ -44,6 +44,10 @@
       width: 80px;
     }
 
+    .padtop-10 {
+      padding-top: 10px;
+    }
+
     .workplace .company {
       flex-flow: column;
       flex-grow: 1;
@@ -64,6 +68,10 @@
     .description {
       margin-top: 20px;
       font-size: 20px;
+    }
+
+    .description ul li {
+      margin: 0 0 0 20px;
     }
 
     .workplace .company .description .position {
@@ -104,9 +112,17 @@
     }
 
     @media print {
-        body {
-            max-width: 800px;
-        }
+      body {
+        max-width: 800px;
+      }
+    }
+
+    .technical-skils {
+      margin-top: 20px;
+      font-size: 18px;
+
+      list-style-type: none;
+      padding: 0;
     }
   </style>
 
@@ -123,21 +139,14 @@
       <div class="about">
         <h1>About me</h1>
         <p class="description">
-          I am a 35 year old backend developer. My experience includes
-          developing complex backend applications in PHP, adhering to the
-          principles of SOLID, KISS, and DRY. I have primarily worked with PHP
-          frameworks such as Symfony, Laravel, Silex, and Zend Framework. I have
-          good knowledge in JS. Learned VueJS and React, but only used it for my
-          pet-projects. At my last two jobs I wrote microservices in Java on
-          Spring. I prioritize writing tests before code whenever possible.
-          I am a supporter of Scrum and transparent work relationships. I understand how important
-          communication between business and developers. Exceptional technical
-          skills are valuable, but without the ability to connect with the
-          business, creating a successful product becomes challenging. I possess
-          strong communication skills. I speak English and Russian.
-        </p>
-        <p class="description">
-          My hobbies: traveling, photography, karting and algorithmic tasks.
+          I am a skilled backend developer with over a decade of experience
+          building complex applications, primarily using PHP (Symfony, Laravel,
+          Silex, Zend Framework). I also have experience with Java (Spring) for
+          microservices, focusing on creating maintainable and efficient code
+          while following SOLID, KISS, and DRY principles. I value transparent,
+          communicative work environments and have a solid understanding of
+          aligning technical solutions with business goals. Strong in team
+          collaboration, I speak fluent English and Russian.
         </p>
       </div>
       <div class="experience">
@@ -162,16 +171,24 @@
             </div>
             <div class="description">
               <p class="position">Backend developer</p>
-              <p class="interval">January 2022 - present</p>
-              <p class="text">
-                Developed a procurement service in a team. Here I have done many
-                types of work as a developer, implementing business functions,
-                refactoring existing solutions and working within the
-                application architecture. Also participated in the development
-                of a microservice in Java (Spring).
-              </p>
+              <p class="interval">January 2022 - August 2024</p>
+              <ul class="text">
+                <li>
+                  Developed and maintained a procurement service, contributing
+                  to new feature development and architectural refactoring.
+                </li>
+                <li>
+                  Built and optimized microservices in Java (Spring) to enhance
+                  service performance and scalability.
+                </li>
+                <li>
+                  Integrated business logic and ensured code quality by adhering
+                  to test-driven development.
+                </li>
+              </ul>
               <p class="stack">
-                PHP, Laravel, MySQL, Redis, Docker, Kubernetes, Java, Spring
+                Technologies: PHP 7.4, PHP 8.1, Laravel, MySQL, Redis, Docker,
+                Kubernetes, Java, Spring
               </p>
             </div>
           </div>
@@ -199,18 +216,23 @@
               <p class="interval">
                 August 2019 - November 2021 (2 years and 4 months)
               </p>
-              <p class="text">
-                Developed a billing service in a small team. Was engaged in
-                integration with various external systems. One of the
-                integrations required developing microservice in Java, because
-                PHP doesn't have needed cryptography libraries. Here I could use my
-                agile experience and work directly with business
-                representatives. The reason why I am leaving this employer is
-                related to my immigration to Estonia.
-              </p>
+              <ul class="text">
+                <li>
+                  Development of billing services and integrated with various
+                  external systems.
+                </li>
+                <li>
+                  Designed and developed Java microservice for cryptographic
+                  functions beyond PHP's capabilities.
+                </li>
+                <li>
+                  Collaborated closely with business stakeholders to align
+                  development with company needs.
+                </li>
+              </ul>
               <p class="stack">
-                PHP 8.0, Symphony 5, PostgreSQL, RabbitMQ, Redis, Docker,
-                Kubernetes, Helm, Java, Spring, CryptoPro JSP
+                Technologies: PHP 8.0, Symphony 5, PostgreSQL, RabbitMQ, Redis,
+                Docker, Kubernetes, Helm, Java, Spring, CryptoPro JSP
               </p>
             </div>
           </div>
@@ -237,18 +259,19 @@
             <div class="description">
               <p class="position">Backend developer</p>
               <p class="interval">Jule 2018 - Jule 2019 (1 year and 1 month)</p>
-              <p class="text">
-                Developed modules for Magento 2. Worked in a cross functional
-                team with frontend and Java developers. This was my experience
-                working in a big company, with a lot of layers of different
-                managers. At that time the company was trying to change the
-                methodology of management and I got acquainted with Agile, from
-                that moment I began to better understand how development and
-                business should be close.
-              </p>
+              <ul class="text">
+                <li>
+                  Developed custom modules for Magento 2 in a cross-functional
+                  team.
+                </li>
+                <li>
+                  Gained hands-on experience with large-scale project management
+                  and Agile methodologies.
+                </li>
+              </ul>
               <p class="stack">
-                PHP 7.1, MySQL, Magento 2, RabbitMQ, Redis, Docker, Kubernetes,
-                Elasticsearch
+                Technologies: PHP 7.1, MySQL, Magento 2, RabbitMQ, Redis,
+                Docker, Kubernetes, Elasticsearch
               </p>
             </div>
           </div>
@@ -274,25 +297,25 @@
               <p class="interval">
                 September 2011 - June 2018 (6 years and 10 months)
               </p>
-              <p class="text">
-                Work in the gas station automation department. Participated in
-                the development web application for a loyalty system in a gas
-                station network. We only distributed our web application on
-                Amazon Web Servers, automating that process, was my next big
-                task at this place. I'am automated process to create and
-                configure AWS instances. Customers could install, update,
-                configure backups for our applications in AWS. Second part of
-                this work is a web application for sales managers, they could
-                manage license keys and distribution processes for every one of
-                our web applications. This biggest work includes 7 different
-                services for managing distribution applications. Participated in
-                different internal and outsource projects.
-              </p>
+              <ul class="text">
+                <li>
+                  Contributed to the development of loyalty systems and sales
+                  management applications.
+                </li>
+                <li>
+                  Automated AWS deployment processes, improving scalability and
+                  client onboarding.
+                </li>
+                <li>
+                  Managed a suite of services facilitating application
+                  distribution.
+                </li>
+              </ul>
 
               <p class="stack">
-                PHP 5.6, PHP 7.0, MySQL, Zend Framework, Silex, AWS, SVN,
-                GitHub, PostgreSQL, PostGIS, JS, TypeScript, NodeJS, Cordova,
-                Zend Encoder
+                Technologies: PHP 5.6, PHP 7.0, MySQL, Zend Framework, Silex,
+                AWS, SVN, GitHub, PostgreSQL, PostGIS, JS, TypeScript, NodeJS,
+                Cordova, Zend Encoder
               </p>
             </div>
           </div>
@@ -301,7 +324,13 @@
       <div class="experience">
         <h1>Education</h1>
         <div class="workplace">
-          <div class="logo"><div class="logo-img"></div></div>
+          <div class="logo">
+            <img
+              alt="Dagestan State University"
+              class="logo-img padtop-10"
+              src="asserts/img/dgu.svg"
+            />
+          </div>
           <div class="company">
             <div class="header">
               <div class="name">
@@ -320,12 +349,12 @@
         </div>
       </div>
       <div class="experience">
-        <h1>Achievements</h1>
+        <h1>Certifications</h1>
         <div class="workplace">
           <div class="logo">
             <img
               alt="ZCPE"
-              class="logo-img"
+              class="logo-img padtop-10"
               src="asserts/img/ZCPE-logo-XS.jpeg"
             />
           </div>
@@ -351,7 +380,7 @@
           <div class="logo">
             <img
               alt="HackerRank"
-              class="logo-img"
+              class="logo-img padtop-10"
               src="asserts/img/HackerRank_Icon-80px.png"
             />
           </div>
@@ -370,6 +399,19 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="experience">
+        <h1>Technical skils</h1>
+        <ul class="technical-skils">
+          <li><b>Languages:</b> PHP, Javascript, TypeScript, Java</li>
+          <li><b>Frameworks:</b> Symfony, Laravel, VueJS, React, Spring</li>
+          <li>
+            <b>Technologies:</b> Docker, Kubernetes, MySQL, PostgreSQL,
+            RabbitMQ, Redis, Elasticsearch, Typesense
+          </li>
+          <li><b>Tools:</b> Git, AWS, Helm</li>
+          <li><b>Methodologies:</b> TDD, Agile, Scrum</li>
+        </ul>
       </div>
       <div class="experience">
         <h1>Contacts</h1>
